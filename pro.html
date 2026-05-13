@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku AI Pro · Morning Sudoku Arena</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="pro">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Morning Sudoku Arena">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+          <span>Morning Sudoku Arena</span>
+        </a>
+        <nav class="nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="daily.html">Daily</a>
+          <a href="difficulties.html">Уровни</a>
+          <a href="ai-coach.html">AI Coach</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+        <a class="profile-button" href="login.html">
+          <span class="avatar" data-user-initials>U</span>
+          <span data-user-name>Профиль</span>
+        </a>
+      </header>
+
+      <main class="section">
+        <section class="pro-hero">
+          <p class="eyebrow">Sudoku AI Pro</p>
+          <h1>Судоку, которое учит думать лучше</h1>
+          <p class="lead">AI Coach, персональный план тренировок, продвинутая статистика и соревновательные режимы для игроков, которые хотят расти каждый день.</p>
+          <div class="actions">
+            <a class="button accent" href="ai-coach.html">Начать AI-тренировку</a>
+            <a class="button secondary" href="#earn-pro">Заработать Pro</a>
+          </div>
+        </section>
+
+        <section class="grid two plan-compare">
+          <article class="card">
+            <p class="eyebrow">Бесплатно</p>
+            <h3>Играть приятно, но рост ограничен</h3>
+            <ul class="feature-list">
+              <li>Легкий, Средний и Сложный режимы</li>
+              <li>1 ежедневный challenge в день</li>
+              <li>Общий рейтинг игроков</li>
+              <li>Базовые заметки</li>
+              <li>3 подсказки в день</li>
+              <li>3 AI-сообщения в день</li>
+            </ul>
+          </article>
+          <article class="card pro-card">
+            <p class="eyebrow">Pro</p>
+            <h3>AI Coach + система прогресса + соревновательное преимущество</h3>
+            <ul class="feature-list">
+              <li>Безлимитные задачи</li>
+              <li>Сложности Эксперт и Мастер</li>
+              <li>Безлимитные AI Coach объяснения</li>
+              <li>Персональный план тренировок</li>
+              <li>Продвинутая статистика</li>
+              <li>Pro-рейтинг и еженедельные турниры</li>
+              <li>Темы, значки, режим фокуса и офлайн-режим</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="card earn-pro-card" id="earn-pro" data-earn-pro></section>
+
+        <section class="grid pro-features">
+          <article class="card"><h3>3 уровня помощи</h3><p>Маленький намек, объяснение логики и следующий ход. Coach учит, а не просто отдает ответ.</p></article>
+          <article class="card"><h3>План тренировок</h3><p>После нескольких игр Pro видит слабые места: подсказки, ошибки, заметки, темп на сложных уровнях, и дает цель на день.</p></article>
+          <article class="card"><h3>Продвинутая статистика</h3><p>Среднее время по сложности, лучший результат, ошибки за игру, зависимость от подсказок, streak и сильные/слабые режимы.</p></article>
+          <article class="card"><h3>Pro соревнования</h3><p>Рейтинг без подсказок, городские рейтинги, еженедельные турниры, AI Coach score и статусные значки.</p></article>
+        </section>
+
+        <section class="grid pro-tools">
+          <article class="card">
+            <h3>Сложности Эксперт и Мастер</h3>
+            <p>Два Pro-режима для игроков, которым уже мало Hard: меньше открытых клеток, больше пользы от заметок и AI Coach.</p>
+          </article>
+          <article class="card">
+            <h3>Персональный план тренировок</h3>
+            <p>Coach анализирует ошибки, подсказки, скорость и предлагает цель на день: например, 2 Medium без подсказок или Hard быстрее на 10%.</p>
+          </article>
+          <article class="card">
+            <h3>Режим фокуса</h3>
+            <p>Минимум отвлекающих элементов, спокойная доска и только нужные инструменты для глубокого решения.</p>
+          </article>
+          <article class="card">
+            <h3>Офлайн-режим</h3>
+            <p>Pro сохраняет набор задач и прогресс локально, чтобы играть без интернета и синхронизировать позже.</p>
+          </article>
+        </section>
+
+        <section class="card paywall-card">
+          <p class="eyebrow">Правильный paywall</p>
+          <h3>Показываем Pro после момента ценности</h3>
+          <div class="paywall-grid">
+            <span>После первой игры: где потерял время?</span>
+            <span>После ошибки: почему ход неверный?</span>
+            <span>После 3 подсказок: безлимитные AI-подсказки</span>
+            <span>После 3 дней streak: план тренировок</span>
+            <span>После top 30%: Pro-турниры</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

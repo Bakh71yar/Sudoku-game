@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "ai": "node ai-server.js"
+  },
+  "dependencies": {
+    "firebase": "^12.13.0"
+  }
+}

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация · Morning Sudoku Arena</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="login">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Morning Sudoku Arena">
+          <span class="brand-mark" aria-hidden="true"
+            ><span></span><span></span><span></span><span></span><span></span
+            ><span></span><span></span><span></span><span></span
+          ></span>
+          <span>Morning Sudoku Arena</span>
+        </a>
+        <nav class="nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="daily.html">Daily</a>
+          <a href="difficulties.html">Уровни</a>
+          <a href="ai-coach.html">AI Coach</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+        <a class="profile-button" href="login.html">
+          <span class="avatar" data-user-initials>U</span>
+          <span data-user-name>Профиль</span>
+        </a>
+      </header>
+
+      <main class="section">
+        <div class="page-head">
+          <div>
+            <p class="eyebrow">Авторизация</p>
+            <h2>Выберите способ входа</h2>
+            <p>
+              Аккаунт связывает никнейм, город, аватарку и честную статистику
+              игрока.
+            </p>
+          </div>
+        </div>
+        <form class="card form" action="javascript:void(0)" data-auth-form>
+          <div class="auth-options" role="group" aria-label="Способ входа">
+            <button
+              class="auth-choice active"
+              type="button"
+              data-auth-method="google"
+            >
+              Google
+            </button>
+            <button class="auth-choice" type="button" data-auth-method="email">
+              Почта
+            </button>
+            <button class="auth-choice" type="button" data-auth-method="guest">
+              Гость
+            </button>
+          </div>
+
+          <input
+            type="hidden"
+            name="method"
+            value="google"
+            data-auth-method-input
+          />
+
+          <div class="field" data-email-field>
+            <label for="email">Почта</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="player@example.com"
+            />
+          </div>
+
+          <div class="field" data-password-field>
+            <label for="password">Пароль</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Минимум 6 символов"
+            />
+          </div>
+
+          <div class="field">
+            <label for="name">Никнейм</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Например, LogicMaster"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="city">Город</label>
+            <select id="city" name="city">
+              <option>Алматы</option>
+              <option>Астана</option>
+              <option>Шымкент</option>
+              <option>Караганда</option>
+              <option>Актобе</option>
+              <option>Тараз</option>
+              <option>Павлодар</option>
+              <option>Усть-Каменогорск</option>
+              <option>Семей</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Аватарка</label>
+            <div class="avatar-picker" data-avatar-picker>
+              <button
+                class="avatar-option active"
+                type="button"
+                data-avatar-id="mint"
+              >
+                🧠
+              </button>
+              <button
+                class="avatar-option blue"
+                type="button"
+                data-avatar-id="blue"
+              >
+                ⚡
+              </button>
+              <button
+                class="avatar-option gold"
+                type="button"
+                data-avatar-id="gold"
+              >
+                👑
+              </button>
+              <button
+                class="avatar-option coral"
+                type="button"
+                data-avatar-id="coral"
+              >
+                🔥
+              </button>
+              <button
+                class="avatar-option dark"
+                type="button"
+                data-avatar-id="dark"
+              >
+                🌙
+              </button>
+              <button class="avatar-option comet" type="button" data-avatar-id="comet">☄</button>
+              <button class="avatar-option mask" type="button" data-avatar-id="mask">◈</button>
+            </div>
+            <input
+              type="hidden"
+              name="avatarId"
+              value="mint"
+              data-avatar-input
+            />
+          </div>
+
+          <button class="button accent" type="submit" data-auth-submit>
+            Продолжить через Google
+          </button>
+        </form>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

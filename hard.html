@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сложный · Morning Sudoku Arena</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="difficulty-level" data-level="hard">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Morning Sudoku Arena">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+          <span>Morning Sudoku Arena</span>
+        </a>
+        <nav class="nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="daily.html">Daily</a>
+          <a href="difficulties.html">Уровни</a>
+          <a href="ai-coach.html">AI Coach</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+        <a class="profile-button" href="login.html">
+          <span class="avatar" data-user-initials>U</span>
+          <span data-user-name>Профиль</span>
+        </a>
+      </header>
+      <main class="section">
+        <div class="page-head">
+          <div>
+            <p class="eyebrow">Тренировочная дорожка</p>
+            <h2><span data-level-title>Сложный</span> режим</h2>
+            <p data-level-summary>Загружаем прогресс...</p>
+          </div>
+        </div>
+        <section class="engagement-strip">
+          <article class="card"><h3>Focus Rank</h3><p>Ранг растет за честные решения без лишних ошибок.</p></article>
+          <article class="card"><h3>Clean Solve</h3><p>Бонус XP за точность и спокойный темп.</p></article>
+          <article class="card"><h3>Path Progress</h3><p>Каждый пройденный уровень остается отмеченным.</p></article>
+        </section>
+        <section class="level-list" data-level-list></section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

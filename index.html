@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Sudoku Arena</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="home">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Morning Sudoku Arena">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+          <span>Morning Sudoku Arena</span>
+        </a>
+        <nav class="nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="daily.html">Daily</a>
+          <a href="difficulties.html">Уровни</a>
+          <a href="ai-coach.html">AI Coach</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+        <a class="profile-button" href="login.html">
+          <span class="avatar" data-user-initials>U</span>
+          <span data-user-name>Профиль</span>
+        </a>
+      </header>
+
+      <main class="hero">
+        <section>
+          <p class="eyebrow">Daily challenge · City leaderboard · AI Coach</p>
+          <h1>Morning Sudoku Arena</h1>
+          <p class="lead">Светлая Sudoku-платформа для ежедневной тренировки мозга: решайте challenge дня, растите в рейтинге своего города и учитесь логике каждого хода.</p>
+          <div class="actions">
+            <a class="button accent" href="daily.html">Играть Daily Challenge</a>
+            <a class="button secondary" href="difficulties.html">Выбрать уровни</a>
+            <button class="button ghost" type="button" data-pro>Upgrade to Pro</button>
+          </div>
+        </section>
+        <section aria-label="Превью Sudoku">
+          <div class="visual-board" data-visual-board></div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

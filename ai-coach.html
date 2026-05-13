@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Coach · Morning Sudoku Arena</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="ai-coach">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Morning Sudoku Arena">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+          <span>Morning Sudoku Arena</span>
+        </a>
+        <nav class="nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="daily.html">Daily</a>
+          <a href="difficulties.html">Уровни</a>
+          <a href="ai-coach.html">AI Coach</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+        <a class="profile-button" href="login.html">
+          <span class="avatar" data-user-initials>U</span>
+          <span data-user-name>Профиль</span>
+        </a>
+      </header>
+
+      <main class="section">
+        <div class="page-head">
+          <div>
+            <p class="eyebrow">Персональный тренер</p>
+            <h2>AI Coach</h2>
+            <p>Разбирает ваши подсказки, ошибки и помогает выбрать стратегию для тяжелых задач.</p>
+          </div>
+          <a class="button accent" href="difficulties.html">К уровням</a>
+        </div>
+
+        <section class="grid two">
+          <article class="card">
+            <h3>Спросить AI</h3>
+            <div class="limit-strip" data-ai-limit></div>
+            <div class="coach-box coach-advice" data-ai-advice>После первой игры здесь появится последний разбор и советы.</div>
+            <div class="field">
+              <label for="ai-question-page">Вопрос</label>
+              <textarea id="ai-question-page" data-ai-question rows="4" placeholder="Например: как мне решать сложные блоки быстрее? Или задай любой другой вопрос."></textarea>
+            </div>
+            <div class="ai-question-actions">
+              <button class="button accent" type="button" data-ai-ask-page>Спросить AI</button>
+            </div>
+          </article>
+          <article class="card ai-answer-card">
+            <h3>Ответ AI</h3>
+            <p class="coach-box ai-answer-box" data-ai-answer>Напишите вопрос и нажмите “Спросить AI”. Ответ появится здесь.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

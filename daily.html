@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge · Morning Sudoku Arena</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="daily">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Morning Sudoku Arena">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+          <span>Morning Sudoku Arena</span>
+        </a>
+        <nav class="nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="daily.html">Daily</a>
+          <a href="difficulties.html">Уровни</a>
+          <a href="ai-coach.html">AI Coach</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+        <a class="profile-button" href="login.html">
+          <span class="avatar" data-user-initials>U</span>
+          <span data-user-name>Профиль</span>
+        </a>
+      </header>
+
+      <main class="section">
+        <div class="page-head">
+          <div>
+            <p class="eyebrow">Challenge дня</p>
+            <h2>Один puzzle для всех игроков</h2>
+            <p>Результат влияет на streak, профиль и место в городском рейтинге.</p>
+          </div>
+          <button class="button secondary" type="button" data-pro>Upgrade to Pro</button>
+        </div>
+
+        <div class="game-layout">
+          <section class="panel game-panel">
+            <div class="game-stats">
+              <div class="stat-pill"><span>Время</span><strong data-timer>00:00</strong></div>
+              <div class="stat-pill"><span>Ошибки</span><strong data-mistakes>0</strong></div>
+              <div class="stat-pill"><span>Уровень</span><strong data-level>Средний</strong></div>
+            </div>
+            <div class="sudoku-board" data-sudoku-board aria-label="Игровое поле Sudoku"></div>
+            <div class="number-pad" aria-label="Цифры">
+              <button type="button" data-number="1">1</button>
+              <button type="button" data-number="2">2</button>
+              <button type="button" data-number="3">3</button>
+              <button type="button" data-number="4">4</button>
+              <button type="button" data-number="5">5</button>
+              <button type="button" data-number="6">6</button>
+              <button type="button" data-number="7">7</button>
+              <button type="button" data-number="8">8</button>
+              <button type="button" data-number="9">9</button>
+            </div>
+            <div class="tool-row">
+              <button type="button" data-note>Notes</button>
+              <button type="button" data-erase>Erase</button>
+              <button type="button" data-hint>Hint</button>
+              <button type="button" data-reset>Reset</button>
+            </div>
+          </section>
+
+          <aside class="card">
+            <h3>AI Coach</h3>
+            <p class="coach-box" data-coach>Выберите клетку и нажмите Hint: AI Coach объяснит, почему число подходит, и запомнит подсказки для разбора после игры.</p>
+            <div class="coach-actions" aria-label="AI Coach режимы помощи">
+              <button type="button" data-coach-small>Маленький намек</button>
+              <button type="button" data-coach-logic>Объяснить логику</button>
+              <button type="button" data-coach-next>Следующий ход</button>
+            </div>
+            <div class="metric"><span>Daily reward</span><strong>+25 XP</strong></div>
+            <div class="metric"><span>Streak</span><strong data-streak-count>0 дней</strong></div>
+            <div class="metric"><span>Подсказки на сегодня</span><strong data-hints-left>3/3</strong></div>
+            <a class="button secondary" href="leaderboard.html">Смотреть leaderboard</a>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
