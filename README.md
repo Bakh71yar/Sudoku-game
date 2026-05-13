@@ -17,3 +17,5 @@ Morning Sudoku Arena — это игровой тренажер логики, г
 - Светлая и темная тема
 
 Morning Sudoku Arena превращает Судоку в ежедневную арену логики, прогресса и соревнования.
+
+https://sudoku-game-livid-nu.vercel.app/difficulties.html
